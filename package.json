@@ -1,0 +1,18 @@
+{
+  "name": "rock-paper-scissor",
+  "version": "1.0.0",
+  "description": "You'll never win.",
+  "main": "index.js",
+  "repository": "git@github.com:cham11ng/rock-paper-scissor.git",
+  "author": "Sagar Chamling",
+  "license": "MIT",
+  "devDependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "4.0.0-beta",
+    "jquery": "^3.2.1",
+    "lodash": "^4.17.4",
+    "popper.js": "^1.12.5",
+    "vue": "^2.4.4",
+    "webpack": "^3.6.0"
+  }
+}
