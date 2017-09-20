@@ -1,9 +1,11 @@
-window._ = require('lodash');
+import _ from 'lodash';
+import '../css/style.css';
 
 function component() {
 	var element = document.createElement('div');
 
 	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+	element.classList.add('heading');
 
 	return element;
 }
