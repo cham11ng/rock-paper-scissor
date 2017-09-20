@@ -17302,7 +17302,7 @@ exports = module.exports = __webpack_require__(7)(undefined);
 
 
 // module
-exports.push([module.i, "@font-face {\n\tfont-family: 'Comfortaa-Regular';\n\tsrc: url(" + __webpack_require__(8) + ") format('eot'),\n\t\t url(" + __webpack_require__(9) + ") format('otf'),\n\t\t url(" + __webpack_require__(10) + ") format('svg'),\n\t\t url(" + __webpack_require__(11) + ") format('ttf'),\n\t\t url(" + __webpack_require__(12) + ") format('woff');\n}\n\nbody {\n\tbackground: url(" + __webpack_require__(13) + ");\n}\n\n.heading {\n\tfont-family: 'Comfortaa-Regular';\n\tcolor: #ef9a9a;\n\ttext-align: center;\n}\n\nimg {\n\tdisplay: block;\n\tmargin: 0 auto;\n}\n\nbutton {\n\tdisplay: block;\n\tmargin: 0 auto;\n}\n", ""]);
+exports.push([module.i, "@font-face {\n\tfont-family: 'Comfortaa-Regular';\n\tsrc: url(" + __webpack_require__(8) + ") format('eot'),\n\t\t url(" + __webpack_require__(9) + ") format('otf'),\n\t\t url(" + __webpack_require__(10) + ") format('svg'),\n\t\t url(" + __webpack_require__(11) + ") format('ttf'),\n\t\t url(" + __webpack_require__(12) + ") format('woff');\n}\n\nbody {\n\tbackground: url(" + __webpack_require__(13) + ");\n}\n\n.heading {\n\tfont-family: 'Comfortaa-Regular';\n\tcolor: #ef9a9a;\n\ttext-align: center;\n}\n\nimg {\n\tdisplay: block;\n\tmargin: 0 auto;\n}\n\nbutton {\n\tdisplay: block;\n\tmargin: 5px auto;\n}\n", ""]);
 
 // exports
 
