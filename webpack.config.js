@@ -4,7 +4,7 @@ module.exports = {
 	entry: './src/js/index.js',
 	output: {
 		filename: 'bundle.js',
-		path: path.resolve(__dirname, 'dist/js')
+		path: path.resolve(__dirname, 'dist')
 	},
 	module: {
 		rules: [
@@ -17,6 +17,12 @@ module.exports = {
 			},
 			{
 				test: /\.(png|svg|jpg|gif)$/,
+				use: [
+					'file-loader'
+				]
+			},
+			{
+				test: /\.(woff|woff2|eot|ttf|otf|svg)$/,
 				use: [
 					'file-loader'
 				]

@@ -1,4 +1,23 @@
+@font-face {
+	font-family: 'Comfortaa-Regular';
+	src: url('../fonts/Comfortaa-Regular.eot') format('eot'),
+		 url('../fonts/Comfortaa-Regular.otf') format('otf'),
+		 url('../fonts/Comfortaa-Regular.svg') format('svg'),
+		 url('../fonts/Comfortaa-Regular.ttf') format('ttf'),
+		 url('../fonts/Comfortaa-Regular.woff') format('woff');
+}
+
+body {
+	background: url('../images/background.jpg');
+}
+
 .heading {
-	color: #26A69A;
+	font-family: 'Comfortaa-Regular';
+	color: #ef9a9a;
 	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
 }

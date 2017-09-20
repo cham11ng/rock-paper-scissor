@@ -73,22 +73,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_style_css__ = __webpack_require__(4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__css_style_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__css_style_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__image_background_jpg__ = __webpack_require__(9);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__image_background_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__image_background_jpg__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_profile_jpg__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__images_profile_jpg___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__images_profile_jpg__);
 
 
 
 
 function component() {
-	var element = document.createElement('h1');
+	var element = document.createElement('div');
 
-	element.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello', 'webpack'], ' ');
-	element.classList.add('heading');
+	var heading = document.createElement('h1');
+	heading.innerHTML = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.join(['Hello', 'webpack'], ' ');
+	heading.classList.add('heading');
+	element.appendChild(heading);
 
-	var background = new Image();
-	background.src = `/dist/js/${__WEBPACK_IMPORTED_MODULE_2__image_background_jpg___default.a}`;
+	var profile_image = new Image();
+	profile_image.src = __WEBPACK_IMPORTED_MODULE_2__images_profile_jpg___default.a;
 
-	element.appendChild(background);
+	element.appendChild(profile_image);
 
 	return element;
 }
@@ -17258,7 +17260,7 @@ var transform;
 var options = {}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(7)(content, options);
+var update = __webpack_require__(13)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -17283,7 +17285,7 @@ exports = module.exports = __webpack_require__(6)(undefined);
 
 
 // module
-exports.push([module.i, ".heading {\n\tcolor: #26A69A;\n\ttext-align: center;\n}", ""]);
+exports.push([module.i, "@font-face {\n\tfont-family: 'Comfortaa-Regular';\n\tsrc: url(" + __webpack_require__(7) + ") format('eot'),\n\t\t url(" + __webpack_require__(8) + ") format('otf'),\n\t\t url(" + __webpack_require__(9) + ") format('svg'),\n\t\t url(" + __webpack_require__(10) + ") format('ttf'),\n\t\t url(" + __webpack_require__(11) + ") format('woff');\n}\n\nbody {\n\tbackground: url(" + __webpack_require__(12) + ");\n}\n\n.heading {\n\tfont-family: 'Comfortaa-Regular';\n\tcolor: #ef9a9a;\n\ttext-align: center;\n}\n\nimg {\n\tdisplay: block;\n\tmargin: 0 auto;\n}\n", ""]);
 
 // exports
 
@@ -17374,6 +17376,42 @@ function toComment(sourceMap) {
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__.p + "50a92481c4e5fad575f79fcf97ed88a7.eot";
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "e716407dc55fd7c2f8e4332165a64882.otf";
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "385808f97c8c003a98be2ff6037ca76d.svg";
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "ad530a5254912b8bd51e7ce88907df6d.ttf";
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "418e223c1cb21abab4eac608962ea66b.woff";
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "1b8aa83d925d57eccba548df972ca063.jpg";
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
 /*
 	MIT License http://www.opensource.org/licenses/mit-license.php
 	Author Tobias Koppers @sokra
@@ -17417,7 +17455,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(8);
+var	fixUrls = __webpack_require__(14);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -17730,7 +17768,7 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 8 */
+/* 14 */
 /***/ (function(module, exports) {
 
 
@@ -17825,10 +17863,10 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 9 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "1b8aa83d925d57eccba548df972ca063.jpg";
+module.exports = __webpack_require__.p + "d7bffa7ddc294d741cd807fae066bcce.jpg";
 
 /***/ })
 /******/ ]);
