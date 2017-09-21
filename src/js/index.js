@@ -1,7 +1,7 @@
 import _ from 'lodash';
 import '../css/style.css';
 import ProfileImage from '../images/profile.jpg'
-import PrintMe from './print.js';
+import print_me from './print.js';
 
 function component() {
 	var element = document.createElement('div');
@@ -17,7 +17,7 @@ function component() {
 	element.appendChild(profile_image);
 
 	button.innerHTML = 'Click Here';
-	button.onclick = PrintMe;
+	button.onclick = print_me;
 	element.appendChild(button);
 
 	return element;
@@ -28,7 +28,7 @@ document.body.appendChild(element);
 
 if (module.hot) {
 	module.hot.accept('./print.js', function() {
-		console.log('Accepting tohe updated printMe module!');
+		console.log('Accepting tohe updated print_me module!');
 		document.body.removeChild(element);
 		element = component(); // re-render the "component" to update the click handler
 		document.body.appendChild(element);
