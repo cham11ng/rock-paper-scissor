@@ -22,7 +22,7 @@ function component() {
 	pre.innerHTML = [
 		'15 cubed is equal to ' + cube(5)
 	].join('\n\n');
-	
+
 	element.appendChild(heading);
 	element.appendChild(profile_image);
 	element.appendChild(button);
@@ -31,6 +31,9 @@ function component() {
 	return element;
 }
 
+document.body.appendChild(component());
+
+/*
 let element = component(); // store the element to re-render on print.js changes
 document.body.appendChild(element);
 
@@ -42,3 +45,4 @@ if (module.hot) {
 		document.body.appendChild(element);
 	})
 }
+*/
