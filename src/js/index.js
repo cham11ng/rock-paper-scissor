@@ -2,23 +2,31 @@ import _ from 'lodash';
 import '../css/style.css';
 import ProfileImage from '../images/profile.jpg'
 import print_me from './print.js';
+import { cube } from  './math.js';
 
 function component() {
 	var element = document.createElement('div');
 	var heading = document.createElement('h1');
 	var button = document.createElement('button');
+	var pre = document.createElement('pre');
 	var profile_image = new Image();
 
 	heading.innerHTML = _.join(['Hello', 'webpack'], ' ');
 	heading.classList.add('heading');
-	element.appendChild(heading);
 
 	profile_image.src = ProfileImage;
-	element.appendChild(profile_image);
 
 	button.innerHTML = 'Click Here';
 	button.onclick = print_me;
+
+	pre.innerHTML = [
+		'15 cubed is equal to ' + cube(5)
+	].join('\n\n');
+	
+	element.appendChild(heading);
+	element.appendChild(profile_image);
 	element.appendChild(button);
+	element.appendChild(pre);
 
 	return element;
 }
