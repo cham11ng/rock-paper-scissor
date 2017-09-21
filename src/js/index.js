@@ -23,11 +23,14 @@ function component() {
 	return element;
 }
 
-document.body.appendChild(component());
+let element = component(); // store the element to re-render on print.js changes
+document.body.appendChild(element);
 
 if (module.hot) {
 	module.hot.accept('./print.js', function() {
-		console.log('Accepting the updated printMe module!');
-		PrintMe();
+		console.log('Accepting tohe updated printMe module!');
+		document.body.removeChild(element);
+		element = component(); // re-render the "component" to update the click handler
+		document.body.appendChild(element);
 	})
 }
